@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginHorizontal="6dp" android:layout_marginVertical="3dp"
+    app:cardCornerRadius="6dp" app:cardElevation="1dp">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="150dp" android:layout_height="wrap_content">
+            <com.nsfwbili.app.ui.RatioImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="#22888888" android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/badge"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="top|end" android:layout_margin="4dp"
+                android:background="@drawable/bg_osd" android:paddingHorizontal="5dp"
+                android:paddingVertical="1dp" android:textColor="@android:color/white"
+                android:textSize="11sp" android:visibility="gone" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/watched"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_gravity="bottom" android:visibility="gone"
+                app:trackThickness="3dp" app:trackCornerRadius="0dp"
+                app:indicatorColor="@color/brand_pink" app:trackColor="#66000000" />
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end" android:layout_margin="3dp"
+                android:background="@drawable/bg_osd" android:paddingHorizontal="4dp"
+                android:textColor="@android:color/white" android:textSize="10sp" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:padding="8dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:ellipsize="end" android:maxLines="3"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:ellipsize="end" android:maxLines="1"
+                android:textColor="?android:attr/textColorSecondary" android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

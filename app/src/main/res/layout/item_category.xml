@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="4dp" app:cardCornerRadius="6dp">
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.nsfwbili.app.ui.RatioImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="#22888888" android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom" android:background="#88000000"
+            android:gravity="center" android:padding="6dp"
+            android:textColor="@android:color/white" android:textSize="14sp" android:textStyle="bold" />
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,6 @@
+<resources>
+    <!-- Android 15 起 targetSdk 35 默认强制 edge-to-edge；布局目前用 fitsSystemWindows 处理系统栏，先保持关闭 -->
+    <style name="Theme.App" parent="Base.Theme.App">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

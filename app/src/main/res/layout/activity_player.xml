@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        app:show_buffering="when_playing"
+        app:show_next_button="false"
+        app:show_previous_button="false" />
+
+    <TextView
+        android:id="@+id/osd"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_osd"
+        android:paddingHorizontal="20dp" android:paddingVertical="10dp"
+        android:textColor="@android:color/white" android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#66000000"
+        android:ellipsize="end" android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="@android:color/white" android:textSize="15sp"
+        android:visibility="gone" />
+</FrameLayout>

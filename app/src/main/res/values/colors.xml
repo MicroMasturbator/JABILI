@@ -1,0 +1,24 @@
+<resources>
+    <!-- 以 B 站粉 #FB7299 为种子的 Material 3 配色（浅色） -->
+    <color name="md_primary">#B4235A</color>
+    <color name="md_onPrimary">#FFFFFF</color>
+    <color name="md_primaryContainer">#FFD9E2</color>
+    <color name="md_onPrimaryContainer">#3E001D</color>
+    <color name="md_secondary">#74565F</color>
+    <color name="md_onSecondary">#FFFFFF</color>
+    <color name="md_secondaryContainer">#FFD9E2</color>
+    <color name="md_onSecondaryContainer">#2B151C</color>
+    <color name="md_tertiary">#7C5635</color>
+    <color name="md_surface">#FFF8F8</color>
+    <color name="md_onSurface">#22191B</color>
+    <color name="md_surfaceVariant">#F2DDE1</color>
+    <color name="md_onSurfaceVariant">#514347</color>
+    <color name="md_outline">#837377</color>
+    <color name="md_outlineVariant">#D5C2C6</color>
+    <color name="md_surfaceContainerLowest">#FFFFFF</color>
+    <color name="md_surfaceContainerLow">#FEF0F2</color>
+    <color name="md_surfaceContainer">#F8EAEC</color>
+    <color name="md_surfaceContainerHigh">#F2E5E7</color>
+    <color name="md_surfaceContainerHighest">#ECDFE1</color>
+    <color name="brand_pink">#FB7299</color>
+</resources>

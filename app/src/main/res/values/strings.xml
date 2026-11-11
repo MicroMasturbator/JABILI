@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">JABILI</string>
+    <string name="takeover">接管播放</string>
+    <string name="no_stream">还没检测到视频地址，先在网页里点一下播放</string>
+    <string name="retry">重试</string>
+    <string name="open_web">网页版</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">番号 / 女优 / 关键词</string>
+    <string name="toggle_layout">切换 列表 / 网格</string>
+    <string name="tags">标签</string>
+    <string name="models">女优</string>
+    <string name="related">相关推荐</string>
+    <string name="play">播放</string>
+    <string name="favorite">收藏</string>
+    <string name="unfavorite">已收藏</string>
+    <string name="categories">分类</string>
+    <string name="favorites">收藏夹</string>
+    <string name="history">历史记录</string>
+    <string name="clear_history">清空历史</string>
+    <string name="loading_more">加载中…</string>
+    <string name="no_more">没有更多了</string>
+    <string name="empty">这里什么都没有</string>
+    <string name="challenge_tip">网站需要验证一下，通过后会自动返回</string>
+    <string name="challenge_needed">网站要求验证，点"重试"会打开验证页</string>
+    <string name="translate_titles">翻译标题</string>
+    <string name="settings">设置</string>
+    <string name="machine_translated">机翻</string>
+</resources>

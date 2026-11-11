@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface" android:elevation="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="站点" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addressRow"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingVertical="12dp" android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/accountGroup"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="账号" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/accountStatus"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingVertical="10dp" android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="登录账号" />
+            <Button
+                android:id="@+id/pullBtn"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" android:layout_weight="1"
+                android:text="从账号同步到本地" />
+        </LinearLayout>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/syncSwitch"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="同步收藏爱心" android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/syncHint"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="?android:attr/textColorSecondary" android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="显示" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/themeRow"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingVertical="12dp" android:textSize="15sp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/dynamicSwitch"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="动态取色（跟随壁纸，Android 12+）" android:textSize="15sp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/translateSwitch"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="翻译标题（日语 → 中文，机翻）" android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
